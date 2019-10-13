@@ -1,0 +1,10 @@
+/.settings/
+/.project
+.idea
+*.iml
+*.md
+out
+gen
+target/
+META-INF/
+*.log
