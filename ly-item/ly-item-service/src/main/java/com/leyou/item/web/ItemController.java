@@ -1,5 +1,7 @@
 package com.leyou.item.web;
 
+import com.leyou.common.enums.ExceptionEnums;
+import com.leyou.common.exception.LyException;
 import com.leyou.item.pojo.Item;
 import com.leyou.item.service.ItemService;
 import javax.annotation.Resource;
@@ -20,11 +22,15 @@ public class ItemController {
     @Resource
     ItemService itemService;
 
+    /**
+     * ResponeEntity  返回体和返回码统一返回
+     * rest风格的标准返回
+     */
     @PostMapping
     public ResponseEntity<Item> saveItem(Item item) {
 
         if (item.getPrice() == null) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            throw new LyException(ExceptionEnums.PRICE_CANNOT_BE_NULL);
         }
 
         item =itemService.saveItem(item);
