@@ -2,9 +2,7 @@ package com.leyou.item.service;
 
 import com.leyou.common.enums.ExceptionEnums;
 import com.leyou.common.exception.LyException;
-import com.leyou.item.mapper.BrandMapper;
 import com.leyou.item.mapper.CategoryMapper;
-import com.leyou.item.pojo.Brand;
 import com.leyou.item.pojo.Category;
 import java.util.List;
 import javax.annotation.Resource;

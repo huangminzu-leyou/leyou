@@ -1,6 +1,6 @@
-package com.leyou.web;
+package com.leyou.upload.web;
 
-import com.leyou.service.UploadService;
+import com.leyou.upload.service.UploadService;
 import com.netflix.client.http.HttpRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

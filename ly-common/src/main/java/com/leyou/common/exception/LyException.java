@@ -2,7 +2,6 @@ package com.leyou.common.exception;
 
 import com.leyou.common.enums.ExceptionEnums;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

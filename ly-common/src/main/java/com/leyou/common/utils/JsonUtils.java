@@ -7,7 +7,6 @@ import com.sun.istack.internal.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.val;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
