@@ -2,6 +2,7 @@ package com.leyou.upload.web;
 
 import com.leyou.upload.service.UploadService;
 import com.netflix.client.http.HttpRequest;
+import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,7 +30,7 @@ public class UploadController {
      * @return
      */
     @PostMapping("image")
-    public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file, HttpRequest req) {
+    public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file, HttpServletRequest req) {
         String url = this.uploadService.uploadImage(file);
         if (StringUtils.isBlank(url)) {
             // url为空，证明上传失败
