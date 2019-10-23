@@ -26,7 +26,6 @@ public class UploadService {
 
     private static final Logger logger = LoggerFactory.getLogger(UploadController.class);
 
-
     @Autowired
     private FastFileStorageClient storageClient;
 
